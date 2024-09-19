@@ -1,0 +1,190 @@
+/* Reset de box-sizing para evitar problemas de dimensionamento */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+header h1 {
+  text-align: center;
+}
+
+.navbar-brand {
+  height: 87px;
+  border-radius: 50%;
+}
+
+.caixa {
+  width: 100%;
+  height: 96vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.caixa-interna,
+.formulario-email,
+.google-maps-link {
+  display: none; /* Hide by default */
+}
+
+
+  .caixa-interna {
+      background-color: white;
+      border: none;
+      border-radius: 11px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      width: 27%;
+      height: 80%;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+      position: relative;
+      margin-top: 100px;
+      cursor: pointer;
+      padding: 20px;
+      transition: transform 0.3s ease-in-out;
+  }
+
+  .caixa-interna a {
+      text-decoration: none; /* Remove o sublinhado padrão dos links */
+      color: #000; /* Define a cor do texto */
+  }
+
+  .caixa-interna:hover {
+      background-color: #f0f0f0; /* Muda a cor de fundo ao passar o mouse */
+      cursor: pointer; /* Muda o cursor para indicar que é um link clicável */
+  }
+
+  .caixa-interna:hover {
+      transform: scale(1.1);
+  }
+
+  .caixa-interna img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px 10px 0 0;
+  }
+
+  .caixa-interna h1 {
+      font-family: "black", sans-serif;
+      font-weight: bold;
+      margin-top: 10px;
+      margin-left: 2px;
+      font-size: 22px;
+      text-align: center;
+      padding: 5px;
+      border-bottom: 1px solid gray;
+      margin-bottom: 1px;
+      box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  .caixa-interna p {
+      font-style: italic;
+      margin-top: 5px;
+      margin-left: 2px;
+      font-size: 20px;
+      text-align: center;
+      padding: 20px;
+      word-wrap: break-word;
+      line-height: 1.4;
+  }
+
+  .caixa-interna footer {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      margin-left: 2px;
+      padding: 10px;
+  }
+
+  .perfil {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin-right: 8px;
+  }
+
+  .nome-perfil {
+      font-size: 18px;
+      font-weight: bold;
+  }
+
+  .formulario-email {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 200px;
+      padding: 20px;
+      border-radius: 50px;
+      background-color: white;
+      box-shadow: 5px 5px 10px rgba(23, 24, 24, 0.5),
+      -5px -5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      position: absolute;
+      bottom: -200px;
+      right: 25px;
+  }
+
+  .formulario-email label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+  }
+
+  .formulario-email input[type="text"],
+  .formulario-email input[type="email"],
+  .formulario-email textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+  }
+
+  .formulario-email button[type="submit"] {
+      background-color: #4caf50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+
+  .formulario-email button[type="submit"]:hover {
+      background-color: #45a049;
+  }
+  .formulario-email input[type="email"]:invalid {
+   
+    border: 2px solid red;
+}
+
+  .google-maps-link {
+      display: inline-block;
+      padding: 10px 15px;
+      height: 50px;
+      background-color: #4285f4;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      bottom: -150px;
+      left: 25px;
+      position: absolute;
+  }
+
+  .google-maps-link:hover {
+      background-color: #3367d6;
+  }
+  .body2{
+ 
+    height: 99vh;
+    width: 100vh;
+    position: absolute;
+    bottom: -1350px;
+display: flex;  justify-content: center;  align-items: center;}
+  
